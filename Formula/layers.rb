@@ -5,21 +5,21 @@
 class Layers < Formula
   desc "Layers CLI - Command line interface for Layers"
   homepage "https://layers.com"
-  version "2.1.5"
+  version "2.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/layers/cli/releases/download/v2.1.5/layers_2.1.5_darwin_amd64.tar.gz"
-      sha256 "fd2c96e30ad09e579f93272728eb688e6d3b8a3066578d52ab52c0ebe04f0d4b"
+      url "https://github.com/layers/cli/releases/download/v2.1.6/layers_2.1.6_darwin_amd64.tar.gz"
+      sha256 "5f6a45f7da41a2038bcc32704e54dfd307a82cc249cc79107e6e2dc9c3ad4a79"
 
       define_method(:install) do
         bin.install "layers"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/layers/cli/releases/download/v2.1.5/layers_2.1.5_darwin_arm64.tar.gz"
-      sha256 "0aed3f91251ace7c199830397c95f4bc890fda9267e5b4f028006039c080a4bf"
+      url "https://github.com/layers/cli/releases/download/v2.1.6/layers_2.1.6_darwin_arm64.tar.gz"
+      sha256 "443b428829af5783880dac0c1d91625e8c4a4d5001aa15a3a6e3af80eebc064b"
 
       define_method(:install) do
         bin.install "layers"
@@ -29,15 +29,15 @@ class Layers < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/layers/cli/releases/download/v2.1.5/layers_2.1.5_linux_amd64.tar.gz"
-      sha256 "7ecf3fc83f4776a7e59cfc59f230f6956a9d76d04d2a5947f703f4ca27eb16c1"
+      url "https://github.com/layers/cli/releases/download/v2.1.6/layers_2.1.6_linux_amd64.tar.gz"
+      sha256 "69b83fcada1ac1b2b5b3b605bde6322798fc1ba7e3ecee41586847a29b0e4db6"
       define_method(:install) do
         bin.install "layers"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/layers/cli/releases/download/v2.1.5/layers_2.1.5_linux_arm64.tar.gz"
-      sha256 "b443123db48f22de81ec64c7038bc942f02fcfcf5991ff28d4f301e8f538c0ed"
+      url "https://github.com/layers/cli/releases/download/v2.1.6/layers_2.1.6_linux_arm64.tar.gz"
+      sha256 "db65f6c16882cb7119562bcbb4b33d091682a7e1d830d0513772e4c93b70dfde"
       define_method(:install) do
         bin.install "layers"
       end
