@@ -11,7 +11,7 @@ class Layers < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/layers/cli/releases/download/v2.1.9/layers_2.1.9_darwin_amd64.tar.gz"
-      sha256 "3fcdd49e90daa2f9bd68064fcc416c89e851c9b95a6050031c3a80f6a14716ce"
+      sha256 "20716a53f30fd5029b9bf9587dd9ee119dea57f80032ccb293db580b161bb9be"
 
       define_method(:install) do
         bin.install "layers"
@@ -19,7 +19,7 @@ class Layers < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/layers/cli/releases/download/v2.1.9/layers_2.1.9_darwin_arm64.tar.gz"
-      sha256 "263cda9452af06fd606bb2fc8206117574d55af11b2c302accb14a0f33c7f24b"
+      sha256 "a3555c9ef1f78347b7d0a46e6badaf229207057d7ecbc8162e0e81a3bc26af6c"
 
       define_method(:install) do
         bin.install "layers"
@@ -30,14 +30,14 @@ class Layers < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/layers/cli/releases/download/v2.1.9/layers_2.1.9_linux_amd64.tar.gz"
-      sha256 "21c5e0a33abf7ce0eaf31738bcfbcceb597a20ec5720aaabadfd6dc7923a87ba"
+      sha256 "6eec004f302f41101e1cc09c385330cdd8b247d3178fdae1bb623f8b1344f57b"
       define_method(:install) do
         bin.install "layers"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/layers/cli/releases/download/v2.1.9/layers_2.1.9_linux_arm64.tar.gz"
-      sha256 "8137583ae622902e537764d4dab3b4f41996227df2971eaa101814b1424402c2"
+      sha256 "99206dc429e67cc36f605421cb6fb61cbb1ff45aa2a16a044d24caa89115c2fa"
       define_method(:install) do
         bin.install "layers"
       end
