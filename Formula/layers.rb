@@ -5,21 +5,21 @@
 class Layers < Formula
   desc "Layers CLI - Command line interface for Layers"
   homepage "https://layers.com"
-  version "2.1.12"
+  version "2.1.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/layers/cli/releases/download/v2.1.12/layers_2.1.12_darwin_amd64.tar.gz"
-      sha256 "517386f41cda2006d8cdcec71cf2e62e1337be9084e86bc78576f8965461d6dd"
+      url "https://github.com/layers/cli/releases/download/v2.1.13/layers_2.1.13_darwin_amd64.tar.gz"
+      sha256 "d2929ce0ede74eb2f6abb3a32e01da5d867d829ba7d45b625812ca061ee6569a"
 
       define_method(:install) do
         bin.install "layers"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/layers/cli/releases/download/v2.1.12/layers_2.1.12_darwin_arm64.tar.gz"
-      sha256 "fa51cf8bc9d61462e401576c1cd96c0d3900b908de672860ed3417aa90b5314e"
+      url "https://github.com/layers/cli/releases/download/v2.1.13/layers_2.1.13_darwin_arm64.tar.gz"
+      sha256 "027c168b6fa4e9e95513e23efbe2d4bedd850d12dc12736ab44db7aaa74f0b43"
 
       define_method(:install) do
         bin.install "layers"
@@ -29,15 +29,15 @@ class Layers < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/layers/cli/releases/download/v2.1.12/layers_2.1.12_linux_amd64.tar.gz"
-      sha256 "7a2c8023117944c132953c157302c4f8769e53c3b747114209c3e83dfeeb7a5d"
+      url "https://github.com/layers/cli/releases/download/v2.1.13/layers_2.1.13_linux_amd64.tar.gz"
+      sha256 "8b48918b4b83cb2308623090be1b1b1da11044651bb8b79b1ebdae71bc4993f0"
       define_method(:install) do
         bin.install "layers"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/layers/cli/releases/download/v2.1.12/layers_2.1.12_linux_arm64.tar.gz"
-      sha256 "d86ba730a517f033c480ad9cdf3bfd3a350ab35cf9b7c9d4f78a926a2ce97f08"
+      url "https://github.com/layers/cli/releases/download/v2.1.13/layers_2.1.13_linux_arm64.tar.gz"
+      sha256 "28eea594128f45b85332bf2b498024d573dc03e5bf16058258d80ca5c5edfb2d"
       define_method(:install) do
         bin.install "layers"
       end
